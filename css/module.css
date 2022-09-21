@@ -1,0 +1,251 @@
+:root{
+
+   /* colors */
+   --blue-color: #2596be;
+   --dark-blue-color: #2c3e50;
+   --pink-color: #cd313b;
+   --white-color: #FFF;
+
+   --border : 1px solid rgba(0,0,0,.5);
+   --box-shadow: .5rem .5rem 0 rgba(37, 150, 190, .7);
+}
+
+*{
+   font-family: 'Poppins' ,'Bahnschrift', sans-serif;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+   outline: none;
+   transition: all .2s ease-out;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-padding-top: 7rem;
+   scroll-behavior: smooth;
+}
+
+body{
+   background-color: var(--dark-blue-color);
+   display: flex;
+   flex-direction: column;
+}
+
+.container{
+   padding: 0 10%;
+   width: 100vw;
+   height: calc(100vh - 70px);
+   display: flex;
+   justify-content: center;
+   gap: 2%;
+   
+}
+
+.container .infos-bar{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 30%;
+   height: 100%;
+   background-color: var(--pink-color);
+   color: white;
+   gap: 5rem;
+
+}
+
+.container .infos-bar .infos{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.container .infos-bar .infos img{
+   width: 40%;
+   border-radius: 50%;
+   border: solid .5rem white;
+}
+
+.container .infos-bar .infos p{
+   font-size: 2rem;
+   margin-top: .7rem;
+}
+
+.container .infos-bar a{
+   font-size: 1.7rem;
+   color: white;
+   padding: 1.5rem;
+   background-color: var(--dark-blue-color);
+   border: .1rem solid white;
+   border-radius: .7rem;
+}
+
+
+.container .tableau{
+   width: 68%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.buttons{
+   text-align: center;
+   margin: 2rem 0;
+}
+
+.logout , .home{
+   color: var(--dark-blue-color);
+   padding: 1rem;
+   border: none;
+   border-radius: .7rem;
+   background-color: var(--white-color);
+   font-size: 1.5rem;
+   margin: 0 1rem;
+}
+
+.home{
+   background-color: var(--pink-color);
+   color: white;
+}
+
+.table-modules{
+   margin: 2rem auto;
+   width: 100%;
+}
+
+.table-modules .manage{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.table-modules2{
+   margin: 2rem auto;
+   max-width: 70%;
+}
+
+.table-modules thead{
+   background-color: var(--pink-color);
+   color: white;
+}
+
+td {
+   padding: 1.6rem;
+}
+
+td:last-child{
+   text-align: center;
+}
+
+th{
+   padding: .6rem;
+}
+
+.table-modules tbody{
+   background-color: white;
+   color: var(--dark-blue-color);
+}
+
+.table-modules button{
+   background-color: var(--pink-color);
+   color: white;
+   padding: 1rem 2.5rem;
+   border: solid .2rem white;
+   border-radius: .5rem;
+   cursor: pointer;
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+
+.table-modules .table-head{
+   color: white;
+   font-weight: 500;
+   padding: 1rem 0;
+}
+
+
+/* media queries */
+
+@media (max-width: 991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   .container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 4rem;
+      padding: 0;
+   }
+   
+   .container .infos-bar{
+      flex-direction: row;
+      gap: 15rem;
+      width: 100vw;
+      height: 60px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: .5rem;
+      padding: 0 10rem;
+   }
+
+   .container .infos-bar .infos{
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+   }
+   
+   
+   .container .infos-bar .infos img{
+      width: 50px;
+      border-radius: 50%;
+      border: solid .3rem white;
+   }
+
+   .container .infos-bar .infos p+p{
+      display: none;
+   }
+   
+   .container .infos-bar a{
+      padding: 1.3rem;
+   }
+
+   .container .tableau{
+      width: 80%;
+   }
+   
+   
+   }
+
+   @media (max-width: 768px){
+   
+      .container .tableau{
+      width: 90%;
+   }
+   
+   }
+   
+   
+   @media (max-width: 450px){
+   
+   html{
+      font-size: 50%;
+   }
+   .container .infos-bar a{
+      padding: .5rem;
+   }
+      
+   .container .infos-bar{
+      gap: 7rem;
+   }
+   
+   }

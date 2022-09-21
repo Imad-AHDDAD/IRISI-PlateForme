@@ -1,0 +1,94 @@
+
+<style>
+   nav{
+   background-color: var(--white-color);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 70px;
+   width: 100vw;
+   padding: 0 10%;
+}
+
+nav img{
+   height: 60px;
+}
+
+
+nav p{
+   font-size: 2rem;
+   color: var(--dark-blue-color);
+   font-weight: 600;
+   padding: .5rem .7rem;
+   border-radius: .7rem;
+   border: none;/*.2rem solid var(--pink-color); */
+}
+
+nav p span{
+   color: var(--pink-color);
+}
+
+/* media queries */
+
+@media (max-width: 991px){
+
+html{
+   font-size: 55%;
+}
+
+nav{
+   width: 100%;
+   justify-content: center;
+   margin: auto;
+}
+
+nav p{
+   display: none;
+}
+
+nav img{
+   margin: 0 3.5rem;
+}
+
+
+
+}
+
+
+@media (max-width: 768px){
+
+
+
+}
+
+
+@media (max-width: 450px){
+
+html{
+   font-size: 50%;
+}
+
+nav{
+   width: 100%;
+   justify-content: center;
+}
+
+}
+
+</style>
+
+<nav class="navbar">
+   <div class="logoIRISI">
+      <a href="form.php"><img src="../images/2000.png" alt="logoIRISI"></a>
+   </div>
+
+   <div class="text">
+      <!-- <p><span>I</span>NGENERIE EN <span>R</span>ESEAUX <span>I</span>NFORMATIQUES ET <span>S</span>YSTEMES D'<span>I</span>NFORMATIONS</p> -->
+      <p>Plate-forme IRISI : <span>Cours-TD-TP</span></p>
+   </div>
+
+   <div class="logoFST">
+      <img src="../images/fst-02.svg" alt="logoFST">
+   </div>
+</nav>
+

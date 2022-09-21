@@ -1,0 +1,172 @@
+:root{
+
+   /* colors */
+   --blue-color: #2596be;
+   --dark-blue-color: #2c3e50;
+   --pink-color: #cd313b;
+   --white-color: #FFF;
+
+   --border : 1px solid rgba(0,0,0,.5);
+   --box-shadow: .5rem .5rem 0 rgba(37, 150, 190, .7);
+}
+
+*{
+   font-family: 'Poppins' ,'Bahnschrift', sans-serif;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+   outline: none;
+   transition: all .2s ease-out;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-padding-top: 7rem;
+   scroll-behavior: smooth;
+}
+
+
+body{
+   background-color: var(--dark-blue-color);
+}
+
+.nav2{
+   background-color: var(--pink-color);
+   color: white;
+   height: 40px;
+}
+
+.nav2 label{
+   font-size: 1.7rem;
+   color: white;
+}
+
+.nav2 a{
+   font-size: 1.7rem;
+   color: white;
+}
+
+.operations{
+   padding: 0 10%;
+   display: grid;
+   gap: 4rem;
+   grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+}
+
+.operations .op{
+   background-color: white;
+   color: var(--dark-blue-color);
+   font-size: 1.7rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: .5rem;
+   padding: 2.5rem;
+   gap: 2rem;
+}
+
+.operations .op .title{
+   width: 100%;
+   background-color: var(--dark-blue-color);
+   color: white;
+   margin-bottom: .3rem;
+   border-radius: .5rem;
+   padding: 1rem 0;
+}
+.operations .op .title h1{
+   text-align: center;
+}
+
+.operations .op a{
+   padding: .7rem 2rem;
+   background-color: var(--pink-color);
+   color: white;
+   border-radius: .5rem;
+
+}
+
+/* listesEtudiantsGenerale */
+
+.form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: calc(100vh - 110px);
+}
+
+.form form{
+   background-color: white;
+   padding: 2rem;
+   border-radius: .5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   font-size: 1.7rem;
+}
+
+.form form h1{
+   color: var(--dark-blue-color);
+}
+.form form h2{
+   color: var(--pink-color);
+   border-bottom: .1rem solid var(--dark-blue-color);
+   width: 100%;
+   text-align: center;
+}
+
+.form form option{
+   display: flex;
+   align-items: center;
+}
+
+.form form input{
+   width: 2rem;
+   height: 2rem;
+}
+
+.form form select{
+   padding: .7rem;
+   border: var(--border);
+   border-radius: .7rem;
+   margin: .5rem 0;
+   font-size: 1.7rem;
+   font-weight: 500;
+   width: 50%;
+   color: var(--dark-blue-color);
+}
+
+.form form label{
+   color: var(--dark-blue-color);
+   font-weight: 500;
+   font-size: 2rem;
+}
+
+.form form button{
+   background-color: var(--pink-color);
+   padding: 1rem 2rem;
+   color: white;
+   font-weight: 500;
+   font-size: 2rem;
+   border: none;
+   border-radius: .5rem;
+   width: 100%;
+   cursor: pointer;
+}
+
+/* liste etudiants */
+.msg{
+   text-align: center;
+   font-size: 1.7rem;
+   background-color: rgba(255,255,255,.7);
+   color: green;
+   margin-bottom: .5rem;
+   padding: .5rem 0;
+}
+
+
